@@ -14,6 +14,10 @@ import com.example.domain.Order;
 import com.example.domain.UserInfo;
 import com.example.service.OrderHistoryService;
 
+/**
+ * @author matsuokakeiichi
+ *
+ */
 @Controller
 @RequestMapping("/orederhistory")
 public class OrderHistoryViewContoroller {

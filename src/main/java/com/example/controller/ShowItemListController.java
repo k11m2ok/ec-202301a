@@ -16,7 +16,7 @@ import com.example.service.ShowItemListService;
 /**
  * 商品情報を操作するコントローラ.
  * 
- * @author ichiyoshikenta
+ * @author matsuokakeiichi
  *
  */
 @Controller

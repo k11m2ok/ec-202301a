@@ -37,20 +37,26 @@ public class SecurityConfig {
 	@Bean
 	SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 		http.authorizeHttpRequests()
-				.requestMatchers("/", "/login-user", "/insert-user", "/insert-user/insert","/item/**",
+				.requestMatchers("/", "/login-user", "/insert-user", "/insert-user/insert", "/item/**",
 						"/item/showItemList/showDetail", "/shoppingcart/**", "/shoppingcart/cart",
 						"/shoppingcart/to-cartlist", "/shoppingcart/delete", "/orderconfilm/**",
-						"/orderconfilm/vieworder","/sort")
+						"/orderconfilm/vieworder", "/sort")
 				.permitAll()
 
 				.anyRequest().authenticated();
 
-		http.formLogin().loginPage("/login-user").loginProcessingUrl("/login-user/login")
-				.failureUrl("/login-user?error=true").defaultSuccessUrl("/", true).usernameParameter("email")
+		http.formLogin().loginPage("/login-user")
+		.loginProcessingUrl("/login-user/login")
+				.failureUrl("/login-user?error=true")
+				.defaultSuccessUrl("/", true)
+				.usernameParameter("email")
 				.passwordParameter("password");
+				
 
 		http.logout().logoutRequestMatcher(new AntPathRequestMatcher("/login-user/logout"))
-				.logoutSuccessUrl("/login-user").deleteCookies("JSESSIONID").invalidateHttpSession(true);
+				.logoutSuccessUrl("/login-user")
+				.deleteCookies("JSESSIONID")
+				.invalidateHttpSession(true);
 
 		return http.build();
 	}

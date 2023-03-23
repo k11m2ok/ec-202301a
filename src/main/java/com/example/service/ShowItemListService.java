@@ -12,7 +12,7 @@ import com.example.repository.ItemRepository;
 /**
  * 商品情報を操作するサービス.
  * 
- * @author ichiyoshikenta
+ * @author matsuokakeiichi
  *
  */
 

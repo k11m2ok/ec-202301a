@@ -13,7 +13,7 @@ import com.example.repository.OrderToppingRepository;
 /**
  * ショッピングカート情報を操作するサービスクラス.
  * 
- * @author seiji_kitahara
+ * @author matsuokakeiichi
  *
  */
 @Service

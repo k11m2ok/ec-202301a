@@ -19,7 +19,7 @@ import jakarta.servlet.http.HttpServletRequest;
 /**
  * ショッピングカード情報を操作するコントローラークラス.
  * 
- * @author seiji_kitahara
+ * @author matsuokakeiichi
  *
  */
 @Controller

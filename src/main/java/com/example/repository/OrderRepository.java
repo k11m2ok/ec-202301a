@@ -82,7 +82,7 @@ public class OrderRepository {
 				item.setPriceL(rs.getInt("item_price_l"));
 				item.setImagePath(rs.getString("item_image_path"));
 				item.setDeleted(rs.getBoolean("item_deleted"));
-//				item.setToppingList(toppingList);
+//						item.setToppingList(toppingList);
 
 				orderItem.setItem(item);
 
@@ -107,6 +107,7 @@ public class OrderRepository {
 				topping.setName(rs.getString("topping_name"));
 				topping.setPriceM(rs.getInt("topping_price_m"));
 				topping.setPriceL(rs.getInt("topping_price_l"));
+				
 				toppingList = new ArrayList<Topping>();
 				toppingList.add(topping);
 
@@ -119,6 +120,7 @@ public class OrderRepository {
 			beforeOrderItemId = nowOrderItemId;
 		}
 		return order;
+
 	};
 
 	private static final ResultSetExtractor<List<Order>> ORDERLIST_RESULT_SET_EXTRACTOR = (rs) -> {
@@ -129,7 +131,7 @@ public class OrderRepository {
 		List<Topping> toppingList = null;
 		List<Order> orderList = new ArrayList<Order>();
 
-		// 前の注文IDを退避しておくための変数
+//		 前の注文IDを退避しておくための変数
 		long beforeOrderId = 0;
 		// 前の注文商品IDを退避しておくための変数
 		long beforeOrderItemId = 0;

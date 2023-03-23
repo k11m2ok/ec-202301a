@@ -14,7 +14,7 @@ import com.example.domain.Item;
 /**
  * itemsテーブルを操作するリポジトリ.
  * 
- * @author ichiyoshikenta
+ * @author matsuokakeiichi
  *
  */
 @Repository

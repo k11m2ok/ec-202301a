@@ -3,7 +3,7 @@ package com.example.domain;
 /**
  * 注文トッピング情報を表すドメインクラス.
  * 
- * @author seiji_kitahara
+ * @author matsuokakeiichi
  *
  */
 public class OrderTopping {

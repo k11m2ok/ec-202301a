@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 注文のドメインクラス
  * 
- * @author yoshidayuuta
+ * @author matsuokakeiichi
  *
  */
 public class Order {

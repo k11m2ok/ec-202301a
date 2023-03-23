@@ -12,6 +12,10 @@ import org.springframework.stereotype.Repository;
 import com.example.domain.OrderItem;
 import com.example.form.ShoppingCartForm;
 
+/**
+ * @author matsuokakeiichi
+ *
+ */
 @Repository
 public class OrderItemRepository {
 

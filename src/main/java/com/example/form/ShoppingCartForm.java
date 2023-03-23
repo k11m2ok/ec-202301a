@@ -4,7 +4,7 @@ import java.util.List;
 /**
  * 商品詳細ページより選択された値を受け取るフォームクラス.
  * 
- * @author seiji_kitahara
+ * @author matsuokakeiichi
  *
  */
 public class ShoppingCartForm {

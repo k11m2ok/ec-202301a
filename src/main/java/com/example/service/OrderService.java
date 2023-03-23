@@ -19,7 +19,7 @@ import com.example.repository.OrderRepository;
 
 /**
  * 購入確認フォームをDBに入れるサービスクラス
- * @author yoshidayuuta
+ * @author matsuokakeiichi
  *
  */
 @Service

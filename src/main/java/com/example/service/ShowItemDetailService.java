@@ -14,7 +14,7 @@ import com.example.repository.ToppingRepository;
 /**
  * 商品詳細を操作するサービス
  * 
- * @author ichiyoshikenta
+ * @author matsuokakeiichi
  *
  */
 @Service
